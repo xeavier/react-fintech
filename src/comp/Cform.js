@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
 function App({ inital, passChildData }) {
-  const customer = useSelector(state => state.customer);
-  const { shipping } = customer;
+  // const customer = useSelector(state => state.customer);
+  // const { shipping } = customer;
   console.log(shipping)
   const [inputList, setInputList] = useState(inital ?inital :[
     { key: "", value: "" , type: ""}
