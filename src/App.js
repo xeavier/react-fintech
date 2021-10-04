@@ -67,21 +67,8 @@ const go2 = () => {
   setindex(2)
 }
   const submitHandler = (e) => {
-    console.log("index")
+    console.log("Create")
     console.log(shipping)
-    // e.preventDefault();
-    // console.log(framework);
-    // if(index === 0){
-    //   isButtonForm = "false";
-    //   isCustomerForm = "true";
-    // }
-    // if(index === 1){
-    //   isCustomerForm = "false";
-    //   isReviewAndCreateForm = "true";
-    // }
-    // if(index === 2){
-    //   isReviewAndCreateForm = "false";
-    // }
   }
   useEffect(() => {
       addPaypalSdk();
@@ -153,7 +140,7 @@ const go2 = () => {
 { index === 1 &&
          <div>
          <CheckoutSteps step1 step2></CheckoutSteps>
-         <Cform passChildData={setChildData} initial={childData}/>
+         <Cform passChildData={setChildData}/>
          <button type="button" className="button primary" onClick={go0}>Prev</button>
          <button type="button" className="button primary" onClick={go2}>Next</button>
        </div>
